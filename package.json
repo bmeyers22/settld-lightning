@@ -1,0 +1,26 @@
+{
+  "name": "lightning",
+  "version": "1.0.0",
+  "description": "Settld websocket server",
+  "main": "index.js",
+  "scripts": {
+    "test": "lightning test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bmeyers22/settld-lightning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmeyers22/settld-lightning/issues"
+  },
+  "homepage": "https://github.com/bmeyers22/settld-lightning#readme",
+  "dependencies": {
+    "mongodb": "^2.0.43",
+    "redis": "^1.0.0",
+    "socket.io": "^1.3.6",
+    "winston": "^1.0.1",
+    "ws": "^0.8.0"
+  }
+}
