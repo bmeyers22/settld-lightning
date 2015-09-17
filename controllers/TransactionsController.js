@@ -23,7 +23,12 @@ var TransactionsController = function(options) {
           }
           // self.socket.send(JSON.stringify(data));
           winston.log('info', JSON.stringify(data));
-          self.socket.send(JSON.stringify(data));
+          try {
+            self.socket.send(JSON.stringify(data));
+          } catch (e) {
+            winston.log('info', e);
+            winston.log('info', 'SEND FAILED!');
+          }
           winston.log('info', "MEssage sent!");
       }
       winston.log("REDIS MESSAGE", message);
