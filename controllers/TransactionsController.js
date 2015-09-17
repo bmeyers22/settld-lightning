@@ -22,7 +22,7 @@ var TransactionsController = function(options) {
             transaction: message.data
           }
           // self.socket.send(JSON.stringify(data));
-          winston.log('info', JSON.stringify(data));
+          winston.log('info', data.transaction.title);
           try {
             self.socket.send(JSON.stringify(data));
           } catch (e) {
